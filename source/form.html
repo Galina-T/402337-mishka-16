@@ -5,13 +5,13 @@
     <title>Form: Мишка</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="page-header">
       <nav class="main-navigation">
-        <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-img" src="img/#" width="86" height="35" alt="Магазин: «Мишка»">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__img" src="img/#" width="86" height="35" alt="Магазин: «Мишка»">
         </a>
         <button class="main-navigation__toggle menu-toggle" type="button">Открыть меню</button>
-        <ul class="main-navigation__menu menu-header">
+        <ul class="main-navigation__list menu-header">
           <li class="menu-header__item">
             <a class="menu-header__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -23,7 +23,7 @@
           <input class="search-form-input" type="search" name="search" id="search-field">
           <label class="search-form-label" for="search-field">Поиск по сайту</label>
         </form>
-        <ul class="main-navigation__user-block user-block">
+        <ul class="main-navigation__list user-block">
           <li class="user-block__item">
             <a class="user-block__link shopping-cart" href="#">Корзина: пока пуста</a>
           </li>
@@ -36,93 +36,93 @@
       <form class="page-main__order-form order-form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="order-form__section">
           <legend class="order-form__subtitle">Тип</legend>
-          <ul class="order-form__list types-list">
-            <li class="types-list__item">
-              <input class="types-list__input" type="radio" name="type" id="type-acc" checked>
-              <label class="types-list__label" for="type-acc">Аксессуар для интерьера</label>
+          <ul class="order-form__list">
+            <li class="order-form__item ">
+              <input class="order-form__radio input-radio" type="radio" name="type" id="type-acc" checked>
+              <label class="order-form__label label" for="type-acc">Аксессуар для интерьера</label>
             </li>
-            <li class="types-list__item">
-              <input class="types-list__input" type="radio" name="type" id="type-toy">
-              <label class="types-list__label" for="type-toy">Детская игрушка</label>
+            <li class="order-form__item">
+              <input class="order-form__radio input-radio" type="radio" name="type" id="type-toy">
+              <label class="order-form__label label" for="type-toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__section">
           <legend class="order-form__subtitle">Цвет</legend>
-          <ul class="order-form__list colors-list">
-            <li class="colors-list__item">
-              <input class="colors-list__input" type="checkbox" name="color" id="color-white" checked>
-              <label class="colors-list__label" for="color-white">Белый</label>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <input class="order-form__checkbox input-checkbox" type="checkbox" name="color" id="color-white" checked>
+              <label class="order-form__label label" for="color-white">Белый</label>
             </li>
-            <li class="colors-list__item">
-              <input class="colors-list__input" type="checkbox" name="color" id="color-gray" checked>
-              <label class="colors-list__label" for="color-gray">Серый</label>
+            <li class="order-form__item">
+              <input class="order-form__checkbox input-checkbox" type="checkbox" name="color" id="color-gray" checked>
+              <label class="order-form__label label" for="color-gray">Серый</label>
             </li>
-            <li class="colors-list__item">
-              <input class="colors-list__input" type="checkbox" name="color" id="color-tiffany">
-              <label class="colors-list__label" for="color-tiffany">«Тиффани»</label>
+            <li class="order-form__item">
+              <input class="order-form__checkbox input-checkbox" type="checkbox" name="color" id="color-tiffany">
+              <label class="order-form__label label" for="color-tiffany">«Тиффани»</label>
             </li>
-            <li class="colors-list__item">
-              <input class="colors-list__input" type="checkbox" name="color" id="color-black">
-              <label class="colors-list__label" for="color-black">Черный</label>
+            <li class="order-form__item">
+              <input class="order-form__checkbox input-checkbox" type="checkbox" name="color" id="color-black">
+              <label class="order-form__label label" for="color-black">Черный</label>
             </li>
-            <li class="colors-list__item">
-              <input class="colors-list__input" type="checkbox" name="color" id="color-pink">
-              <label class="colors-list__label" for="color-pink">Розовый</label>
+            <li class="order-form__item">
+              <input class="order-form__checkbox input-checkbox" type="checkbox" name="color" id="color-pink">
+              <label class="order-form__label label" for="color-pink">Розовый</label>
             </li>
-            <li class="colors-list__item">
-              <input class="colors-list__input" type="checkbox" name="color" id="color-orange">
-              <label class="colors-list__label" for="color-orange">Оранжевый</label>
+            <li class="order-form__item">
+              <input class="order-form__checkbox input-checkbox" type="checkbox" name="color" id="color-orange">
+              <label class="order-form__label label" for="color-orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__section">
           <legend class="order-form__subtitle">Фио</legend>
-          <ul class="order-form__list full-name-list">
-            <li class="full-name-list__item">
-              <label class="full-name-list__label" for="name">Имя:</label>
-              <input class="full-name-list__input" type="text" name="full-name" id="name" placeholder="Введите ваше имя*" required>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <label class="order-form__label label" for="name">Имя:</label>
+              <input class="order-form__field input" type="text" name="full-name" id="name" placeholder="Введите ваше имя*" required>
             </li>
-            <li class="full-name-list__item">
-              <label class="full-name-list__label" for="family-name">Фамилия:</label>
-              <input class="full-name-list__input" type="text" name="full-name" id="family-name" placeholder="Укажите фамилию*" required>
+            <li class="order-form__item">
+              <label class="order-form__label label" for="family-name">Фамилия:</label>
+              <input class="order-form__field input" type="text" name="full-name" id="family-name" placeholder="Укажите фамилию*" required>
             </li>
-            <li class="full-name-list__item">
-              <label class="full-name-list__label" for="patronymic">Отчество:</label>
-              <input class="full-name-list__input" type="text" name="full-name" id="patronymic" placeholder="Отчество, если желаете">
+            <li class="order-form__item">
+              <label class="order-form__label label" for="patronymic">Отчество:</label>
+              <input class="order-form__field input" type="text" name="full-name" id="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__section">
           <legend class="order-form__subtitle">Тел</legend>
-          <ul class="order-form__list contact-numbers-list">
-            <li class="contact-numbers-list__item">
-              <input class="contact-numbers-list__input" type="tel" name="contact-number" id="cell" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <input class="order-form__field input" type="tel" name="contact-number" id="cell" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__section">
           <legend class="order-form__subtitle">E-mail</legend>
           <ul class="order-form__list emails-list">
-            <li class="emails-list__item">
-              <input class="emails-list__input" type="email" name="email" id="email-main" placeholder="Ваш Email*" required>
+            <li class="order-form__item">
+              <input class="order-form__field input" type="email" name="email" id="email-main" placeholder="Ваш Email*" required>
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__section">
           <legend class="order-form__subtitle">Доп</legend>
-          <ul class="order-form__list additional-list">
-            <li class="additional-list__item">
-              <textarea class="additional-list__textarea" name="comment" id="comment-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <textarea class="order-form__textarea textarea" name="comment" id="comment-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </li>
           </ul>
         </fieldset>
         <p class="order-form__legend">*Поля обязательны для заполнения</p>
-        <button class="order-form__button" type="submit">Отправить заказ</button>
+        <button class="order-form__submit button" type="submit">Отправить заказ</button>
       </form>
     </main>
-    <footer class="main-footer">
-      <ul class="main-footer__social-list social-list">
+    <footer class="page-footer">
+      <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link social-inst">Instagram</a>
         </li>
@@ -133,7 +133,7 @@
           <a class="social-list__link social-tw">Твиттер</a>
         </li>
       </ul>
-      <a class="main-footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <a class="page-footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
   </body>
 </html>
