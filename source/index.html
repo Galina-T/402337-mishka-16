@@ -2,11 +2,128 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Index: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <nav class="main-navigation">
+        <a class="page-header__logo logo" href="#">
+          <img class="logo__img" src="img/#" width="86" height="35" alt="Магазин: «Мишка»">
+        </a>
+        <button class="main-navigation__toggle menu-toggle" type="button">Открыть меню</button>
+        <ul class="main-navigation__list menu-header">
+          <li class="menu-header__item">
+            <a class="menu-header__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="menu-header__item">
+            <a class="menu-header__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <form class="main-navigation__search-form search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="search-form-input" type="search" name="search" id="search-field">
+          <label class="search-form-label" for="search-field">Поиск по сайту</label>
+        </form>
+        <ul class="main-navigation__list user-block">
+          <li class="user-block__item">
+            <a class="user-block__link shopping-cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин: «Мишка»</h1>
+      <p class="page-main__subtitle">Милые штуки ручной работы для дома</p>
+      <ul class="page-main__menu menu-main">
+        <li class="menu-main__item">
+          <a class="menu-main__link" href="Interior-items.html">Предметы интерьера</a>
+        </li>
+        <li class="menu-main__item">
+          <a class="menu-main__link" href="Kids-toys.html">Детские игрушки</a>
+        </li>
+      </ul>
+      <section class="page-main__section featured">
+        <h2 class="visually-hidden">Избранное</h2>
+        <ul class="featured__list">
+          <li class="featured__item">
+            <h3 class="featured__title">Вязаные корзинки</h3>
+            <b class="featured__legend">товар недели</b>
+            <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <img class="featured__img" src="img/#" width="260" height="315" alt="Изображение вязаных корзинок">
+            <table class="featured__table">
+              <thead>
+                <tr>
+                  <th class="featured__field">Цвет:</th>
+                  <th class="featured__field">Диаметр:</th>
+                  <th class="featured__field">Высота:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="featured__value">«Тиффани»/серый</td>
+                  <td class="featured__value">25 см</td>
+                  <td class="featured__value">15 см</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="featured__price">Цена: 990 руб.</p>
+            <a class="featured__button button" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__section about">
+        <h3 class="about__title">Коротко о нас:</h3>
+        <ul class="about__list">
+          <li class="about__item">Экологически чистые материалы</li>
+          <li class="about__item">Скандинавский стиль по российской цене</li>
+          <li class="about__item">Увеличивает лайки на фотографиях</li>
+          <li class="about__item">Связано вручную с любовью и умилением</li>
+          <li class="about__item">Поддержка отечественного производителя</li>
+          <li class="about__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="page-main__section reviews">
+        <h3 class="reviews__title">Отзывы</h3>
+        <blockquote class="reviews__item">
+          <p class="reviews__text">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </p>
+          <cite class="reviews__author-name">Анастасия Красильникова</cite>
+          <span class="reviews__author-email">@misssssiskras</span>
+        </blockquote>
+        <button class="reviews__prev" type="button">Предыдущий</button>
+        <button class="reviews__next" type="button">Следующий</button>
+        <a class="reviews__write button" href="review.html">Написать</a>
+      </section>
+      <section class="page-main__section contacts">
+        <h3 class="contacts__title">Контакты</h3>
+        <address class="contacts__address">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530567!2d30.320853351676455!3d59.93871916896525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1554332899748!5m2!1sru!2sru" width="600" height="450" style="border:0" allowfullscreen></iframe>
+        <a class="contacts__write button" href="#">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-inst">Instagram</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-fb">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-tw">Твиттер</a>
+        </li>
+      </ul>
+      <a class="page-footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+    </footer>
+    <section class="modal-cart">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <p class="modal-cart__subtitle">Выберите размер:</p>
+      <ul class="modal-cart__sizes-list sizes-list">
+        <li class="sizes-list__item sizes-list__item--active">s</li>
+        <li class="sizes-list__item">m</li>
+        <li class="sizes-list__item">l</li>
+      </ul>
+      <button class="modal-cart__button button" type="submit">Добавить</button>
+    </section>
   </body>
 </html>
