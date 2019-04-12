@@ -1,0 +1,25 @@
+.search-form {
+  position: relative;
+}
+
+.search-form__input {
+  margin: 0;
+  padding: 32px 0 30px 76px;
+  width: 100%;
+  font: inherit;
+  border: none;
+  background-color: inherit;
+}
+
+.search-form__input::placeholder {
+  font-family: $page-font-family;
+  font-size: $third-value;
+  line-height: 24px;
+  font-weight: $page-font-weight;
+  color: $page-text-color;
+}
+
+.search-form__icon {
+  @include style-icon(18px, 18px);
+  opacity: 0.2;
+}

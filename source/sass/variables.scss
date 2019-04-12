@@ -1,0 +1,103 @@
+$first-color: #ffffff;
+
+$second-color: #f1f1f1;
+
+$third-color: #63d1bb;
+
+$fourth-color: #62d1ba;
+
+$fifth-color: #56c3b2;
+
+$sixth-color: #000000;
+
+$seventh-color: #444444;
+
+$eighth-color: rgba(68, 68, 68, 0.3);
+
+$ninth-color: #ececec;
+
+
+$first-value: 13px;
+
+$second-value: 14px;
+
+$third-value: 15px;
+
+$fourth-value: 16px;
+
+$fifth-value: 17px;
+
+$sixth-value: 18px;
+
+$seventh-value: 19px;
+
+$eighth-value: 20px;
+
+$ninth-value: 24px;
+
+$tenth-value: 25px;
+
+$eleventh-value: 27px;
+
+$twelfth-value: 30px;
+
+// *** ширины ***
+
+$page-width: 320px; // страница
+
+$container-width: 260px; //центровщик
+
+// *** размер шрифта ***
+
+$page-font-family: "Open Sans", Arial, sans-serif;
+
+$page-text-size: $fifth-value; // основной
+
+$page-text-height: $ninth-value; // основной
+
+$page-font-weight: 700;
+
+$alt-font-weight: 400;
+
+// ***** для фонов ****
+
+$page-background: $first-color; // основной фон страницы
+
+$blocks-background: $second-color; // маленькие блоки
+
+$background-menu-l: $third-color; // левый пункт менюшки
+
+$background-menu-r: $fifth-color; // правый пункт менюшки
+
+$alt-button: $third-color; // альтернатив для кнопки
+
+$icon-style: $third-color;//иконки
+
+$label-radio: $fourth-color; //
+
+// ***** для текста ****
+
+$page-text-color: $sixth-color; // основной цвет текста
+
+$sub-text-color: $seventh-color; // дополнительный
+
+$legend-text-color: $third-color; // заголовки в форме
+
+$placeholder-text-color: $eighth-color; // placeholders
+
+$menu-text: $first-color; // пункты менюшки
+
+// ***** border ****
+
+$main-style-line: 1px solid $ninth-color; // основной
+
+$legend-style-line: 1px solid $third-color; // блоки формы
+
+$input-style-line: 2px solid $seventh-color; // для элементов формы
+
+// $ninth-value:
+// $eleventh:
+// $twelfth:
+
+// 13 13   14   15 15 15   17 17 17 17 17   18 18   19 19   25   27
+// 24 30   16   20 24 30   16 18 20 24 30   20 30   18 24   30   30

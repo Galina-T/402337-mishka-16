@@ -1,0 +1,39 @@
+.video-content {
+  padding: 29px 34px 33px;
+  border: $main-style-line;
+ }
+
+.video-content__title {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  padding-left: 57px;
+  font-size: 17px;
+  position: relative;
+}
+
+.video-content__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  path {
+    fill: $icon-style;
+  }
+}
+
+.video-content__clip {
+  margin-bottom: 34px;
+  position: relative;
+  left: -34px;
+}
+
+.video-content__text {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  font-size: 13px;
+  color: $sub-text-color;
+  font-weight: $alt-font-weight;
+}

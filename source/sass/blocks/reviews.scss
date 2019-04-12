@@ -1,0 +1,31 @@
+.reviews__title {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: $alt-font-weight0;
+  color: $sub-text-color;
+}
+
+.reviews__author-email {
+  line-height: 30px;
+  font-weight: $alt-font-weight;
+  color: $sub-text-color;
+}
+
+.review__control {
+  margin-bottom: 38px;
+  display: flex;
+}

@@ -1,0 +1,25 @@
+@mixin no-list() {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin input-content($width, $height) {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: $width;
+  height: $height;
+  border: $input-style-line;
+  box-sizing: border-box;
+}
+
+@mixin style-icon($width, $height) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: ($page-width - $container-width)/2;
+  width: $width;
+  height: $height;
+}

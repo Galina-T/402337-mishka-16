@@ -1,0 +1,14 @@
+.textarea {
+  padding: 18px;
+  min-height: 142px;
+  border: $input-style-line;
+  box-sizing: border-box;
+}
+
+.textarea::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $page-font-family;
+  font-weight: $alt-font-weight;
+  color: $placeholder-text-color;
+}

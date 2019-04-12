@@ -1,0 +1,19 @@
+.sizes-list {
+  @include no-list();
+  display: flex;
+  justify-content: space-between;
+  line-height: 17px;
+  color: $sub-text-color;
+}
+
+.sizes-list__item {
+  padding: 20px 0;
+  width: 82px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sizes-list__item--active {
+  border-color: $third-color;
+}

@@ -1,0 +1,16 @@
+.user-block {
+  @include no-list();
+  position: relative;
+}
+
+.user-block__link {
+  padding: 32px 0 30px 76px;
+  display: block;
+  text-decoration: none;
+  color: $page-text-color;
+}
+
+.user-block_icon {
+  @include style-icon(21px, 18px);
+  opacity: 0.2;
+}

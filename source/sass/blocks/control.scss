@@ -1,0 +1,19 @@
+.control {
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  height: 50px;
+  font-size: 0;
+  border: $main-style-line;
+  background-position: center;
+}
+
+.control--prev {
+  background-image: url(../../img/icon-left-arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.control--next {
+  background-image: url(../../img/icon-right-arrow.svg);
+  background-repeat: no-repeat;
+}

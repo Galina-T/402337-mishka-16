@@ -1,0 +1,14 @@
+.menu-header {
+  @include no-list();
+}
+
+.menu-header__item {
+  border-bottom: $main-style-line;
+}
+
+.menu-header__link {
+  padding: 32px 0 30px 76px;
+  display: block;
+  text-decoration: none;
+  color: $page-text-color;
+}

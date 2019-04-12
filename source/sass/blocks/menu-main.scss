@@ -1,0 +1,25 @@
+.menu-main {
+  @include no-list();
+}
+
+.menu-main__link {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: $menu-text;
+  font-size: 19px;
+  position: relative;
+}
+
+.menu-main__icon {
+  opacity: 0.5;
+}
+
+.menu-main__link--left {
+  background-color: $background-menu-l;
+}
+
+.menu-main__link--right {
+  background-color: $background-menu-r;
+}

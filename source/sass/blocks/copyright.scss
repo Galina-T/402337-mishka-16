@@ -1,0 +1,17 @@
+.copyright {
+  padding: 28px 39px 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 19px;
+  color: $page-text-color;
+}
+
+.copyright__icon {
+  path {
+    fill: $icon-style;
+  }
+}
+

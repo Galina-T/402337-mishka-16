@@ -1,0 +1,31 @@
+.table {
+  display: flex;
+}
+
+.table__tbody {
+  flex-grow: 1;
+}
+
+.table__tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__cell {
+  padding: 13px 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: $alt-font-weight;
+  color: #444444;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.table__cell--field {
+  padding-right: 31px;
+}
+
+.table__cell--contact {
+  padding: 20px 0;
+  border: none;
+  line-height: 30px;
+}

@@ -1,0 +1,55 @@
+.order-form__section {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  border: none;
+  border-top: $legend-style-line;
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
+}
+
+.order-form__subtitle {
+  margin-bottom: 24px;
+  padding-right: 20px;
+  line-height: 17px;
+  color: $legend-text-color;
+  text-transform: uppercase;
+
+  &--tell,
+  &--email {
+    margin-bottom: 9px;
+  }
+}
+
+.order-form__list {
+  margin: 0;
+  @include no-list();
+}
+
+.order-form__item {
+  margin-bottom: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order-form__radio {
+  margin: 0;
+  margin-right: 22px;
+}
+
+.order-form__legend {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: $alt-font-weight;
+  color: $sub-text-color;
+}

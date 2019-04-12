@@ -1,0 +1,20 @@
+.button {
+  padding: 20px 0;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: $page-font-weight;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $sub-text-color;
+  border: $input-style-line;
+}
+
+.button--modal-size {
+  background-color: $alt-button;
+  color: #ffffff;
+  border: none;
+}
