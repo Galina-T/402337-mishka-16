@@ -24,8 +24,6 @@
 
 .menu-header__link--add {
   display: none;
-
-
 }
 
 @media (min-width: $width_tablet) {
@@ -47,10 +45,6 @@
 }
 
 @media (min-width: $width_desctop) {
-  .menu-header {
-
-  }
-
   .menu-header__item:first-child .menu-header__link {
     border-right: $border_default;
   }

@@ -1,6 +1,6 @@
 .menu-main {
   padding: 0;
-  background-image: url(../../img/hero-mobile@1x.jpg);
+  background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -16%;
 }
@@ -38,11 +38,11 @@
 @media (min-width: $width_tablet) {
   .menu-main {
     @include inner();
-    background-image: url(../../img/hero-tablet@1x.jpg);
+    background-image: url("../../img/hero-tablet@1x.jpg");
     position: relative;
   }
 
-  .menu-main::after{
+  .menu-main::after {
     display: block;
     position: absolute;
     content: "";
@@ -51,7 +51,7 @@
     left: 0;
     bottom: 0;
     transform: translateY(50%);
-    background-image: url(../../img/bg-zigzag-fill.svg);
+    background-image: url("../../img/bg-zigzag-fill.svg");
     background-size: contain;
   }
 
@@ -68,10 +68,10 @@
 
 @media (min-width: $width_desctop) {
   .menu-main {
-    background-image: url(../../img/hero-mobile@1x.jpg);
+    background-image: url("../../img/hero-mobile@1x.jpg");
   }
 
-  .menu-main::after{
+  .menu-main::after {
     height: 34px;
   }
 

@@ -1,6 +1,7 @@
 .page-footer {
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0;
+
   @include inner();
   background-color: $background_color_content;
   width: 320px;

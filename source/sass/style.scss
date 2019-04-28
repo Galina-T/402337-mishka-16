@@ -1,71 +1,33 @@
 @import "fonts.scss";
-
 @import "variables.scss";
-
 @import "mixins.scss";
-
 @import "blocks/container.scss";
-
 @import "blocks/button.scss";
-
 @import "blocks/page-header.scss";
-
 @import "blocks/main-nav.scss";
-
 @import "blocks/logo.scss";
-
 @import "blocks/menu-toggle.scss";
-
 @import "blocks/menu-header.scss";
-
 @import "blocks/search-form.scss";
-
 @import "blocks/user-block.scss";
-
 @import "blocks/page-main.scss";
-
 @import "blocks/menu-main.scss";
-
 @import "blocks/featured.scss";
-
 @import "blocks/table.scss";
-
 @import "blocks/about.scss";
-
 @import "blocks/reviews.scss";
-
 @import "blocks/contacts.scss";
-
 @import "blocks/order-form.scss";
-
 @import "blocks/label.scss";
-
 @import "blocks/input.scss";
-
-@import "blocks/emails-list.scss";
-
 @import "blocks/textarea.scss";
-
 @import "blocks/catalog.scss";
-
 @import "blocks/video-content.scss";
-
 @import "blocks/page-footer.scss";
-
 @import "blocks/social-list.scss";
-
-@import "blocks/social-inst.scss";
-
-@import "blocks/social-tw.scss";
-
 @import "blocks/copyright.scss";
-
 @import "blocks/sizes-list.scss";
-
 @import "blocks/modal-cart.scss";
-
 @import "blocks/icon-button.scss";
-
 @import "blocks/control.scss";
-
 @import "layout.scss";

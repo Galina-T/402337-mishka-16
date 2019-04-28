@@ -71,14 +71,13 @@
 }
 
 @media (min-width: $width_tablet) {
-
   .order-form__section {
     position: relative;
   }
 
   .order-form__section-wrapper {
     padding-top: 50px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
   }
 
   .order-form__section-wrapper:nth-child(2n) {
@@ -136,7 +135,6 @@
 }
 
 @media (min-width: $width_desctop) {
-
   .order-form__list {
     padding-left: 175px;
   }
@@ -144,5 +142,4 @@
   .order-form__item--checkbox {
     width: 33%;
   }
-
 }

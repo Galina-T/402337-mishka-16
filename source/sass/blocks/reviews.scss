@@ -8,7 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-
 }
 
 .reviews__title {
@@ -49,13 +48,13 @@
 }
 
 @media (min-width: $width_tablet) {
-.reviews {
-  padding-top: 86px;
-  padding-bottom: 122px;
-  background-image: url(../../img/review@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: 350px 457px;
-}
+  .reviews {
+    padding-top: 86px;
+    padding-bottom: 122px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
 
   .reviews__title {
     margin-bottom: 52px;
@@ -105,4 +104,3 @@
     padding-left: 175px;
   }
 }
-

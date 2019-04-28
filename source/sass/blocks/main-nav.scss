@@ -10,11 +10,11 @@
 }
 
 .main-nav--opened .menu-toggle {
-  background-image: url(../../img/icon-menu-close.svg);
+  background-image: url("../../img/icon-menu-close.svg");
 }
 
 .main-nav--closed .menu-toggle {
-  background-image: url(../../img/icon-menu-open.svg);
+  background-image: url("../../img/icon-menu-open.svg");
 }
 
 @media (max-width: $mobile-width-only) {
@@ -36,6 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+
     @include inner();
   }
 
@@ -63,5 +64,4 @@
     order: 0;
     width: 450px;
   }
-
 }
