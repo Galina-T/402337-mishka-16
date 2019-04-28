@@ -1,9 +1,36 @@
 .page-footer {
-  margin:0;
-  padding: 0 30px;
-  background-color: $blocks-background;
+  margin:0 auto;
+  padding: 0;
+  @include inner();
+  background-color: $background_color_content;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .page-footer__list {
   margin: 0;
+}
+
+@media (min-width: $width_tablet) {
+  .page-footer {
+    width: 772px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: $width_desctop) {
+  .page-footer {
+    width: 1150px;
+  }
 }

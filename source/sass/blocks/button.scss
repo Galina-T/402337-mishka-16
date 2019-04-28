@@ -1,20 +1,21 @@
 .button {
-  padding: 20px 0;
-  display: block;
+  padding: 15px 0;
+  display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  font-size: 17px;
+  font-size: $font_size_main;
   line-height: 17px;
-  font-weight: $page-font-weight;
+  font-weight: $font_weight_bold;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: $sub-text-color;
-  border: $input-style-line;
+  color: $text_color_sub;
+  border: $border_input;
 }
 
 .button--modal-size {
-  background-color: $alt-button;
+  padding-top: 19px;
+  background-color: $color_seafoam_blue;
   color: #ffffff;
   border: none;
 }

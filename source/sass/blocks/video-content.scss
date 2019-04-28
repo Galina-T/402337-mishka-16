@@ -1,39 +1,121 @@
 .video-content {
-  padding: 29px 34px 33px;
-  border: $main-style-line;
- }
+  @include inner();
+}
+
+.video-content__list {
+  border: $border_default;
+  @include list-reset();
+}
+
+.video-content__item {
+  margin-bottom: 33px;
+}
 
 .video-content__title {
   margin: 0;
-  margin-bottom: 26px;
-  padding: 0;
-  padding-left: 57px;
-  font-size: 17px;
+  margin-bottom: 25px;
+  padding: 22px 34px 0 90px;
+  font-size: $font_size_main;
   position: relative;
 }
 
 .video-content__icon {
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+  left: 34px;
+  top: 29px;
 
   path {
-    fill: $icon-style;
+    fill: $color_seafoam_blue;
   }
 }
 
 .video-content__clip {
-  margin-bottom: 34px;
   position: relative;
-  left: -34px;
+  margin-bottom: 20px;
 }
 
 .video-content__text {
   margin: 0;
-  margin-bottom: 29px;
-  padding: 0;
+  margin-bottom: 25px;
+  padding: 0 34px;
   font-size: 13px;
-  color: $sub-text-color;
-  font-weight: $alt-font-weight;
+  color: $text_color_sub;
+  font-weight: $font_weight_alt;
+}
+
+.video-content__button {
+  display: block;
+  width: 192px;
+  margin: 0 auto;
+}
+
+@media (min-width: $width_tablet) {
+  .video-content__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 46px;
+  }
+
+  .video-content__title {
+    margin-bottom: 30px;
+    padding: 0 42px 0 107px;
+    font-size: 20px;
+  }
+
+  .video-content__icon {
+    left: 42px;
+    top: 0;
+  }
+
+  .video-content__clip {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 36px;
+  }
+
+  .video-content__text {
+    margin-bottom: 35px;
+    padding: 0 42px;
+    font-size: 15px;
+    line-height: 30px
+  }
+}
+
+
+@media (min-width: $width_desctop) {
+  .video-content__list {
+    padding: 0;
+  }
+
+  .video-content__item {
+    margin-bottom: 46px;
+    position: relative;
+    padding: 0 57px 0 762px;
+  }
+
+  .video-content__title {
+    padding: 100px 0 0;
+    margin-bottom: 42px;
+    width: 100%;
+  }
+
+  .video-content__icon {
+    top: 47px;
+    left: 0;
+  }
+
+  .video-content__text {
+    margin-bottom: 45px;
+    padding: 0;
+  }
+
+  .video-content__clip {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

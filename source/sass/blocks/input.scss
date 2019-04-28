@@ -1,16 +1,29 @@
 .input {
-  padding: 18px;
-  padding-left: 0;
+  padding: 20px 0 17px;
+  width: 100%;
+  box-sizing: border-box;
+
+  background-color: transparent;
 
   border: none;
-  border-bottom: $input-style-line;
+  border-bottom: $border_input;
   border-color: #000000;
 }
 
 .input::placeholder {
-  font-size: 17px;
+  font-size: $font_size_main;
   line-height: 18px;
-  font-family: $page-font-family;
-  font-weight: $alt-font-weight;
-  color: $placeholder-text-color;
+  font-family: $font_family_base;
+  font-weight: $font_weight_alt;
+  color: $text_color_placeholder;
+}
+
+@media (min-width: $width_tablet) {
+  .input {
+    padding-left: 18px;
+  }
+
+  .input::placeholder {
+    font-size: 19px;
+  }
 }

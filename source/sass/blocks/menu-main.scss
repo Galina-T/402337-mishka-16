@@ -1,25 +1,81 @@
 .menu-main {
-  @include no-list();
+  padding: 0;
+  background-image: url(../../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -16%;
+}
+
+.menu-main__list {
+  @include list-reset();
+}
+
+.menu-main__item {
+  &:nth-child(1) {
+    background-color: $color_seafoam_blue;
+  }
+
+  &:nth-child(2) {
+    background-color: $color_aqua_marine;
+  }
 }
 
 .menu-main__link {
-  padding: 30px;
+  position: relative;
+  padding: 25px 195px 30px 30px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  color: $menu-text;
+  color: $text_color_menu;
   font-size: 19px;
-  position: relative;
 }
 
 .menu-main__icon {
+  position: absolute;
+  right: 30px;
   opacity: 0.5;
 }
 
-.menu-main__link--left {
-  background-color: $background-menu-l;
+@media (min-width: $width_tablet) {
+  .menu-main {
+    @include inner();
+    background-image: url(../../img/hero-tablet@1x.jpg);
+    position: relative;
+  }
+
+  .menu-main::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 24px;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    background-image: url(../../img/bg-zigzag-fill.svg);
+    background-size: contain;
+  }
+
+  .menu-main__list {
+    display: flex;
+  }
+
+  .menu-main__link {
+    padding: 30px 195px 35px 37px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.menu-main__link--right {
-  background-color: $background-menu-r;
+@media (min-width: $width_desctop) {
+  .menu-main {
+    background-image: url(../../img/hero-mobile@1x.jpg);
+  }
+
+  .menu-main::after{
+    height: 34px;
+  }
+
+  .menu-main__link {
+    padding: 30px 350px 35px 37px;
+  }
 }

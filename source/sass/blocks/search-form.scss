@@ -1,10 +1,11 @@
 .search-form {
   position: relative;
+  border-bottom: $border_default;
 }
 
 .search-form__input {
   margin: 0;
-  padding: 32px 0 30px 76px;
+  padding: 25px 50px 30px 76px;
   width: 100%;
   font: inherit;
   border: none;
@@ -12,14 +13,24 @@
 }
 
 .search-form__input::placeholder {
-  font-family: $page-font-family;
-  font-size: $third-value;
-  line-height: 24px;
-  font-weight: $page-font-weight;
-  color: $page-text-color;
+  font-family: $font_family_base;
+  font-size: $font_size_main;
+  line-height: $line_height_main;
+  font-weight: $font_weight_bold;
+  color: $text_color_default;
 }
 
 .search-form__icon {
   @include style-icon(18px, 18px);
   opacity: 0.2;
+}
+
+@media (min-width: $width_tablet) {
+  .search-form {
+    padding: 40px;
+    border-bottom: none;
+  }
+  .search-form__input {
+    display: none;
+  }
 }

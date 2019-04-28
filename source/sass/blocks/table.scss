@@ -12,16 +12,16 @@
 }
 
 .table__cell {
-  padding: 13px 0;
+  padding: 10px 0;
   font-size: 15px;
   line-height: 20px;
-  font-weight: $alt-font-weight;
+  font-weight: $font_weight_alt;
   color: #444444;
   border-bottom: 1px solid #f1f1f1;
 }
 
 .table__cell--field {
-  padding-right: 31px;
+  padding-right: 30px;
 }
 
 .table__cell--contact {
