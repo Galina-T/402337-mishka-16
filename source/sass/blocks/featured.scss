@@ -1,0 +1,145 @@
+.featured {
+  padding-top: 27px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.featured__list {
+  @include list-reset();
+}
+
+.featured__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.featured__legend {
+  display: block;
+  margin-bottom: 28px;
+  line-height: 20px;
+  color: $text_color_legend;
+  text-transform: uppercase;
+}
+
+.featured__text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: $text_color_sub;
+  font-weight: $font_weight_alt;
+}
+
+.featured__table {
+  margin-bottom: 28px;
+}
+
+.featured__img {
+  display: block;
+  padding: 0;
+  width: 260px;
+  height: 315px;
+}
+
+.featured__price {
+  margin: 0;
+  padding: 25px 0;
+  color: $text_color_sub;
+  text-align: center;
+}
+
+@media (min-width: $width_tablet) {
+  .featured {
+    padding-top: 36px;
+    padding-bottom: 47px;
+  }
+
+  .featured__list {
+    position: relative;
+  }
+
+  .featured__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 45px;
+  }
+
+  .featured__legend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 17px;
+    margin: 0;
+    width: 70px;
+    text-align: center;
+  }
+
+  .featured__wrapper {
+    display: flex;
+    padding-right: 380px;
+    flex-direction: column;
+  }
+
+  .featured__text {
+    font-size: $font_size_main;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .featured__table {
+    margin-bottom: 25px;
+  }
+
+  .featured__img {
+    order: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  .featured__price {
+    padding: 31px 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $width_desctop) {
+  .featured {
+    padding-right: 0;
+    padding-top: 110px;
+    padding-bottom: 67px;
+    padding-left: 175px;
+  }
+
+  .featured__title {
+    font-size: 53px;
+    line-height: 57px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .featured__legend {
+    top: 0;
+    left: -125px;
+    transform: translateY(50%);
+  }
+
+  .featured__wrapper {
+    padding-right: 583px;
+  }
+
+  .featured__text {
+    margin-bottom: 45px;
+  }
+
+  .featured__table {
+    margin-bottom: 77px;
+  }
+
+  .featured__img {
+    width: 525px;
+    height: 636px;
+  }
+}

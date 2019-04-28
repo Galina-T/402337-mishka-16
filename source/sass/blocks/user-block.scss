@@ -1,0 +1,24 @@
+.user-block {
+  @include list-reset();
+  position: relative;
+}
+
+.user-block__link {
+  display: block;
+  padding: 25px 50px 30px 76px;
+  text-decoration: none;
+  color: $text_color_default;
+}
+
+.user-block__icon {
+  @include style-icon(21px, 18px);
+  opacity: 0.2;
+}
+
+@media (min-width: $width_tablet) {
+  .user-block__link {
+    display: block;
+    padding: 32px 0 32px 83px;
+    text-align: right;
+  }
+}

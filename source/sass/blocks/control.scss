@@ -1,0 +1,27 @@
+.control {
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  height: 50px;
+  font-size: 0;
+  border: $border_default;
+  background-position: center;
+  background-color: transparent;
+}
+
+.control--prev {
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.control--next {
+  background-image: url("../../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $width_tablet) {
+  .control {
+    width: 90px;
+    border: none;
+  }
+}

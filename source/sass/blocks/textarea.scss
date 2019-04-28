@@ -1,0 +1,21 @@
+.textarea {
+  padding: 14px;
+  min-height: 142px;
+  width: 100%;
+  border: $border_input;
+  box-sizing: border-box;
+}
+
+.textarea::placeholder {
+  font-size: $font_size_main;
+  line-height: 18px;
+  font-family: $font_family_base;
+  font-weight: $font_weight_alt;
+  color: $text_color_placeholder;
+}
+
+@media (min-width: $width_tablet) {
+  .textarea::placeholder {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,62 @@
+$color_white: #ffffff;
+
+$color_grey: #f1f1f1;
+
+$color_seafoam_blue: #63d1bb;
+
+$color_seafoam_two: #62d1ba;
+
+$color_aqua_marine: #56c3b2;
+
+$color_black: #000000;
+
+$color_greyish_brown: #444444;
+
+$color_greyish_brown_30: rgba(68, 68, 68, 0.3);
+
+$color_light_pink: #ececec;
+
+// *** ширины ***
+
+$width_mobile: 320px;
+$width_tablet: 772px;
+$width_desctop: 1150px;
+$mobile-width-only: 771px;
+
+// *** размер шрифта ***
+
+$font_family_base: "Open Sans", "Arial", sans-serif;
+
+$font_size_main: 17px; // основной
+
+$line_height_main: 24px; // основной
+
+$font_weight_bold: 700;
+
+$font_weight_alt: 400;
+
+// ***** для фонов ****
+
+$background_color_default: $color_white; // основной фон страницы
+
+$background_color_content: $color_grey; // маленькие блоки
+
+// ***** для текста ****
+
+$text_color_default: $color_black; // основной цвет текста
+
+$text_color_sub: $color_greyish_brown; // дополнительный
+
+$text_color_legend: $color_seafoam_blue; // заголовки в форме
+
+$text_color_placeholder: $color_greyish_brown_30; // placeholders
+
+$text_color_menu: $color_white; // пункты менюшки
+
+// ***** border ****
+
+$border_default: 1px solid $color_light_pink; // основной
+
+$border_legend: 1px solid $color_seafoam_blue; // блоки формы
+
+$border_input: 2px solid $color_greyish_brown; // для элементов формы

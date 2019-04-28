@@ -1,0 +1,40 @@
+@mixin inner() {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $width_tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin input-content($width, $height) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $width;
+    height: $height;
+    border: $border_input;
+    box-sizing: border-box;
+  }
+}
+
+@mixin style-icon($width, $height) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+  width: $width;
+  height: $height;
+}
