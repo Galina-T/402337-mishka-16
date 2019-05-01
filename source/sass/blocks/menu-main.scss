@@ -21,7 +21,7 @@
 
 .menu-main__link {
   position: relative;
-  padding: 25px 195px 30px 30px;
+  padding: 25px 150px 30px 30px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -53,6 +53,10 @@
     transform: translateY(50%);
     background-image: url("../../img/bg-zigzag-fill.svg");
     background-size: contain;
+  }
+
+  .menu-main__item {
+    width: 50%;
   }
 
   .menu-main__list {
