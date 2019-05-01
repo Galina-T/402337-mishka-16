@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  box-sizing: border-box;
 }
 
 .main-nav__toggle {
@@ -36,6 +37,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    width: 100%;
+    max-width: 1150px;
 
     @include inner();
   }
@@ -46,7 +49,7 @@
 
   .main-nav__item--menu {
     order: 1;
-    width: 400px;
+    width: calc(100% - 300px);
   }
 
   .main-nav__wrapper {

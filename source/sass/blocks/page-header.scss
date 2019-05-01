@@ -1,10 +1,10 @@
 .page-header {
+  margin: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   z-index: 1;
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
 }
 
 .page-header__logo {
@@ -12,10 +12,6 @@
 }
 
 @media (min-width: $width_tablet) {
-  .page-header {
-    width: 772px;
-  }
-
   .page-header__logo {
     border-bottom: none;
     flex-grow: 1;
@@ -24,7 +20,8 @@
 
 @media (min-width: $width_desctop) {
   .page-header {
-    width: 1150px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
