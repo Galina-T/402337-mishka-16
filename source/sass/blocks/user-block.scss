@@ -3,15 +3,30 @@
   position: relative;
 }
 
+.user-block__item {
+  &:hover .user-block__icon {
+    fill: $color_seafoam_blue;
+    opacity: 1;
+  }
+
+  &:active .user-block__icon {
+    fill: $color_seafoam_blue;
+    opacity: 0.3;
+  }
+}
+
 .user-block__link {
   display: block;
   padding: 25px 50px 30px 76px;
   text-decoration: none;
   color: $text_color_default;
+
+  @include hover-active-link;
 }
 
 .user-block__icon {
   @include style-icon(21px, 18px);
+  fill: $color_black;
   opacity: 0.2;
 }
 

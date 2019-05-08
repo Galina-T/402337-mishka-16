@@ -16,8 +16,8 @@
   font-size: 15px;
   line-height: 20px;
   font-weight: $font_weight_alt;
-  color: #444444;
-  border-bottom: 1px solid #f1f1f1;
+  color: $color_greyish_brown;
+  box-shadow: 0 1px 0 0 $color_grey;
 }
 
 .table__cell--field {

@@ -1,13 +1,33 @@
 .input {
-  padding: 20px 0 17px;
+  padding: 15px 0 17px;
   width: 100%;
   box-sizing: border-box;
+
+  font-size: $font_size_main;
+  line-height: 18px;
+  font-family: $font_family_base;
+  font-weight: $font_weight_alt;
+  color: $color_greyish_brown;
 
   background-color: transparent;
 
   border: none;
   border-bottom: $border_input;
   border-color: #000000;
+
+  &:hover {
+    border-color: $color_seafoam_two;
+  }
+
+  &:active {
+    border-color: $color_seafoam_two;
+  }
+
+  &:hover + svg,
+  &:active + svg {
+    fill: $color_seafoam_two;
+    opacity: 1;
+  }
 }
 
 .input::placeholder {
@@ -18,6 +38,15 @@
   color: $text_color_placeholder;
 }
 
+input[type="radio"]:checked + label::before {
+  background-color: $color_seafoam_two;
+  box-shadow: inset 0 0 0 10px #ffffff;
+}
+
+input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
 @media (min-width: $width_tablet) {
   .input {
     padding-left: 18px;
@@ -25,5 +54,10 @@
 
   .input::placeholder {
     font-size: 19px;
+  }
+
+  input[type="radio"]:checked + label::before {
+    background-color: $color_seafoam_two;
+    box-shadow: inset 0 0 0 15px #ffffff;
   }
 }

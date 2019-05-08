@@ -4,6 +4,20 @@
   width: 100%;
   border: $border_input;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: $color_seafoam_two;
+  }
+
+  &:active {
+    border-color: $color_seafoam_two;
+  }
+
+  font-size: $font_size_main;
+  line-height: 18px;
+  font-family: $font_family_base;
+  font-weight: $font_weight_alt;
+  color: $color_greyish_brown;
 }
 
 .textarea::placeholder {

@@ -11,6 +11,16 @@
   text-align: center;
   color: $text_color_sub;
   border: $border_input;
+
+  &:hover {
+    color: $color_white;
+    background-color: $color_greyish_brown;
+  }
+
+  &:active {
+    color: rgba($color: $color_white, $alpha: 0.3);
+    background-color: $color_greyish_brown;
+  }
 }
 
 .button--modal-size {

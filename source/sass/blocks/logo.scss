@@ -1,18 +1,41 @@
 .logo {
   display: block;
+  padding: 0;
+}
+
+.logo--header {
   padding: 22px 0 20px;
+}
+
+.logo--footer {
+  &:hover .logo__img--footer {
+    fill: $color_greeny_blue;
+  }
+
+  &:active .logo__img--footer {
+    fill: $color_greeny_blue;
+    opacity: 0.3;
+  }
 }
 
 .logo__img {
   display: block;
   margin: 0 auto;
   padding: 0;
+}
+
+.logo__img--header {
   width: 86px;
   height: 35px;
 }
 
+.logo__img--footer {
+  width: 102px;
+  height: 34px;
+}
+
 @media (min-width: $width_tablet) {
-  .logo__img {
+  .logo__img--header {
     margin: 0;
     width: 112px;
     height: 46px;
@@ -20,11 +43,11 @@
 }
 
 @media (min-width: $width_desctop) {
-  .logo {
+  .logo--header {
     padding: 9px 0;
   }
 
-  .logo__img {
+  .logo__img--header {
     width: 149px;
     height: 72px;
   }

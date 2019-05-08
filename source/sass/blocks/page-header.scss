@@ -1,17 +1,24 @@
 .page-header {
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
   z-index: 1;
-  width: auto;
+  width: 320px;
 }
 
 .page-header__logo {
   border-bottom: $border_default;
+
+  @include hover-active-link;
 }
 
 @media (min-width: $width_tablet) {
+  .page-header {
+    margin: 0;
+    width: auto;
+  }
+
   .page-header__logo {
     border-bottom: none;
     flex-grow: 1;

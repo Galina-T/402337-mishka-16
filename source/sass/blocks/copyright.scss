@@ -13,8 +13,14 @@
   margin-left: 30px;
   width: 27px;
   height: 34px;
+  fill: $color_seafoam_blue;
 
-  path {
-    fill: $color_seafoam_blue;
+  &:hover {
+    fill: $color_greeny_blue;
+  }
+
+  &:active {
+    fill: $color_greeny_blue;
+    opacity: 0.3;
   }
 }

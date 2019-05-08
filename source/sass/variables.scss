@@ -8,20 +8,22 @@ $color_seafoam_two: #62d1ba;
 
 $color_aqua_marine: #56c3b2;
 
+$color_greeny_blue: #46c1ae;
+
 $color_black: #000000;
 
 $color_greyish_brown: #444444;
-
-$color_greyish_brown_30: rgba(68, 68, 68, 0.3);
 
 $color_light_pink: #ececec;
 
 // *** ширины ***
 
 $width_mobile: 320px;
-$width_tablet: 772px;
+$width_tablet: 768px;
 $width_desctop: 1150px;
-$mobile-width-only: 771px;
+$mobile-width-only: 767px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 // *** размер шрифта ***
 
@@ -49,7 +51,7 @@ $text_color_sub: $color_greyish_brown; // дополнительный
 
 $text_color_legend: $color_seafoam_blue; // заголовки в форме
 
-$text_color_placeholder: $color_greyish_brown_30; // placeholders
+$text_color_placeholder: rgba($color: $color_greyish_brown, $alpha: 0.3); // placeholders
 
 $text_color_menu: $color_white; // пункты менюшки
 
@@ -57,6 +59,6 @@ $text_color_menu: $color_white; // пункты менюшки
 
 $border_default: 1px solid $color_light_pink; // основной
 
-$border_legend: 1px solid $color_seafoam_blue; // блоки формы
+$border_legend: 1px solid $color_greeny_blue; // блоки формы
 
 $border_input: 2px solid $color_greyish_brown; // для элементов формы

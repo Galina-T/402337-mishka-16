@@ -11,12 +11,20 @@
   margin-right: 7px;
   padding: 15px 0;
   flex-grow: 1;
-  border: 2px solid rgba(68, 68, 68, 0.1);
+  border: 2px solid rgba($color: $color_greyish_brown, $alpha: 0.1);
   text-align: center;
   box-sizing: border-box;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    border-color: rgba($color: $color_greyish_brown, $alpha: 0.3);
+  }
+
+  &:active {
+    border-color: rgba($color: $color_seafoam_two, $alpha: 1);
   }
 }
 

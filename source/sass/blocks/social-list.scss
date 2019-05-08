@@ -20,6 +20,15 @@
 .social-list__link {
   display: block;
   text-decoration: none;
+
+  &:hover .social-list__icon {
+    fill: $color_greeny_blue;
+  }
+
+  &:active .social-list__icon {
+    fill: $color_greeny_blue;
+    opacity: 0.3;
+  }
 }
 
 .social--inst {
