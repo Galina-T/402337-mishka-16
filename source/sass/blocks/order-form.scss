@@ -1,12 +1,13 @@
 .order-form__section-wrapper {
   @include inner();
-  padding-bottom: 33px;
+  padding-bottom: 30px;
 }
 
 .order-form__section {
   margin: 0;
   padding: 0;
   border: none;
+  border-top: 1px solid $color_seafoam_blue;
 }
 
 .order-form__section--textarea {
@@ -23,6 +24,7 @@
 
 .order-form__subtitle {
   padding: 0;
+  padding-right: 25px;
   margin-bottom: 23px;
   display: flex;
   align-items: center;
@@ -30,19 +32,14 @@
   color: $text_color_legend;
   text-transform: uppercase;
 
-  &::after {
-    display: block;
-    content: "";
-    margin-left: 25px;
-    height: 1px;
-    flex-grow: 1;
-    background-color: $color_seafoam_blue;
-  }
-
   &--tell,
   &--email {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
+}
+
+.order-form__subtitle--name {
+  margin-bottom: 30px;
 }
 
 .order-form__list {
@@ -51,10 +48,19 @@
 
 .order-form__item {
   margin-bottom: 22px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.order-form__item svg {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
 }
 
 .order-form__wrapper {
@@ -73,6 +79,7 @@
 @media (min-width: $width_tablet) {
   .order-form__section {
     position: relative;
+    border: none;
   }
 
   .order-form__section-wrapper {
@@ -84,9 +91,13 @@
     background-color: $background_color_content;
   }
 
+  .order-form__section--contacts {
+    margin-bottom: 24px;
+  }
+
   .order-form__subtitle {
     margin: 0;
-    padding: 20px 0 17px;
+    padding: 17px 0 17px;
     position: absolute;
     left: 0;
 
@@ -102,14 +113,24 @@
   .order-form__list--checkbox {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .order-form__item {
+    margin-bottom: 24px;
     display: flex;
   }
 
-  .order-form__item--checkbox {
-    width: 50%;
+  .order-form__item--checkbox:nth-child(odd) {
+    width: 52%;
+  }
+
+  .order-form__item--checkbox:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .order-form__item svg {
+    right: 23px;
   }
 
   .order-form__label {
@@ -137,9 +158,31 @@
 @media (min-width: $width_desctop) {
   .order-form__list {
     padding-left: 175px;
+    padding-right: 175px;
   }
 
-  .order-form__item--checkbox {
-    width: 33%;
+  .order-form__list--checkbox {
+    padding-right: 0;
+  }
+
+  .order-form__item--checkbox:nth-child(n) {
+    width: 262px;
+  }
+
+  .order-form__item--checkbox:nth-child(n+3) {
+    margin-bottom: 0;
+  }
+
+  .order-form__subtitle {
+    left: 60px;
+  }
+
+  .order-form__item svg {
+    right: 5px;
+  }
+
+  .order-form__wrapper {
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }

@@ -1,6 +1,16 @@
 .search-form {
   position: relative;
   border-bottom: $border_default;
+
+  &:hover .search-form__icon {
+    fill: $color_seafoam_blue;
+    opacity: 1;
+  }
+
+  &:active .search-form__icon {
+    fill: $color_seafoam_blue;
+    opacity: 0.3;
+  }
 }
 
 .search-form__input {
@@ -22,6 +32,7 @@
 
 .search-form__icon {
   @include style-icon(18px, 18px);
+  fill: $color_black;
   opacity: 0.2;
 }
 

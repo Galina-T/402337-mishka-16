@@ -31,15 +31,42 @@
   top: 0;
   left: 0;
 
-  path {
-    fill: $color_seafoam_blue;
-  }
+  fill: $color_seafoam_blue;
+}
+
+.about__icon--flower {
+  top: 8px;
+  left: 8px;
+}
+
+.about__icon--money {
+  top: 8px;
+}
+
+.about__icon--heart {
+  top: 13px;
+  left: 8px;
+}
+
+.about__icon--ball {
+  top: 11px;
+  left: 3px;
+}
+
+.about__icon--rocket {
+  top: 12px;
+  left: -6px;
+}
+
+.about__icon--gift {
+  top: 10px;
+  left: 3px;
 }
 
 @media (min-width: $width_tablet) {
   .about {
-    padding-top: 56px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 55px;
   }
 
   .about__title {
@@ -51,6 +78,7 @@
 
   .about__list {
     column-count: 2;
+    column-gap: 0;
   }
 
   .about__item {
@@ -63,8 +91,13 @@
 @media (min-width: $width_desctop) {
   .about {
     padding-right: 0;
-    padding-top: 63px;
-    padding-bottom: 83px;
+    padding-top: 60px;
+    padding-bottom: 65px;
     padding-left: 175px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
