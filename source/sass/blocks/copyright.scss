@@ -19,7 +19,8 @@
     fill: $color_greeny_blue;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     fill: $color_greeny_blue;
     opacity: 0.3;
   }

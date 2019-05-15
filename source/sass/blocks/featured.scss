@@ -35,7 +35,7 @@
 
 .featured__text {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-size: 15px;
   color: $text_color_sub;
   font-weight: $font_weight_alt;
@@ -52,6 +52,7 @@
   padding: 0;
   width: 260px;
   height: 315px;
+  background-color: $color_grey;
 }
 
 .featured__price {

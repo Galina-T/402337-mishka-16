@@ -9,7 +9,8 @@
     border-color: $color_seafoam_two;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border-color: $color_seafoam_two;
   }
 

@@ -20,8 +20,7 @@
   }
 
   .page-header__logo {
-    border-bottom: none;
-    flex-grow: 1;
+    border: none;
   }
 }
 
@@ -29,13 +28,5 @@
   .page-header {
     max-width: 1150px;
     margin: 0 auto;
-  }
-
-  .page-header__logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-grow: 0;
   }
 }

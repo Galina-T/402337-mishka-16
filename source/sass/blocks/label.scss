@@ -34,6 +34,21 @@
   }
 }
 
+.label--modal-size {
+  padding: 15px 0;
+  justify-content: center;
+  border: 2px solid rgba($color: $color_greyish_brown, $alpha: 0.1);
+
+  &:hover {
+    border-color: rgba($color: $color_greyish_brown, $alpha: 0.3);
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($color: $color_seafoam_blue, $alpha: 1);
+  }
+}
+
 .label--radio,
 .label--checkbox {
   &:hover::before {

@@ -1,18 +1,24 @@
 .user-block {
   @include list-reset();
-  position: relative;
 }
 
 .user-block__item {
+  position: relative;
+
   &:hover .user-block__icon {
     fill: $color_seafoam_blue;
     opacity: 1;
   }
 
-  &:active .user-block__icon {
+  &:active .user-block__icon,
+  &:focus .user-block__icon {
     fill: $color_seafoam_blue;
     opacity: 0.3;
   }
+}
+
+.user-block__item--add {
+  display: none;
 }
 
 .user-block__link {
@@ -24,6 +30,13 @@
   @include hover-active-link;
 }
 
+.user-block__link--add {
+  margin: 0;
+  font-size: 15px;
+  font-weight: $font_weight_alt;
+  color: $color_greyish_brown;
+}
+
 .user-block__icon {
   @include style-icon(21px, 18px);
   fill: $color_black;
@@ -31,9 +44,26 @@
 }
 
 @media (min-width: $width_tablet) {
-  .user-block__link {
+  .user-block__item:first-child {
+    border-left: $border_default;
+  }
+
+  .user-block__item--add {
     display: block;
+  }
+
+  .user-block__link {
     padding: 32px 0 32px 83px;
     text-align: right;
+  }
+
+  .user-block__link--add {
+    padding: 18px 0;
+  }
+}
+
+@media (min-width: $width_desctop) {
+  .user-block__link--add {
+    padding: 20px 0;
   }
 }

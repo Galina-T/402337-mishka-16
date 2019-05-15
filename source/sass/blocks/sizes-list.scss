@@ -1,33 +1,14 @@
 .sizes-list {
   @include list-reset();
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   line-height: 17px;
   color: $text_color_sub;
   text-transform: uppercase;
 }
 
 .sizes-list__item {
-  margin-right: 7px;
-  padding: 15px 0;
-  flex-grow: 1;
-  border: 2px solid rgba($color: $color_greyish_brown, $alpha: 0.1);
-  text-align: center;
+  width: 32%;
   box-sizing: border-box;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:hover {
-    border-color: rgba($color: $color_greyish_brown, $alpha: 0.3);
-  }
-
-  &:active {
-    border-color: rgba($color: $color_seafoam_two, $alpha: 1);
-  }
-}
-
-.sizes-list__item--active {
-  border-color: $color_seafoam_blue;
 }

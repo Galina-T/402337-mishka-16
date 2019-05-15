@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   width: 130px;
-  height: 50px;
+  height: 52px;
   font-size: 0;
   border: $border_default;
   background-position: center;
@@ -12,12 +12,12 @@
 }
 
 .control--prev {
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
 }
 
 .control--next {
-  background-image: url("../../img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
 }
 

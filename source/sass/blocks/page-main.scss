@@ -27,7 +27,7 @@
     height: 6px;
     left: 0;
     bottom: 0;
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(180deg);
@@ -56,17 +56,6 @@
   line-height: 30px;
   text-align: center;
   background-color: $background_color_content;
-}
-
-.page-main__legend {
-  margin: 0;
-  font-size: 15px;
-  font-weight: $font_weight_alt;
-  position: absolute;
-  right: 50px;
-  top: 25px;
-  color: $color_greyish_brown;
-  display: none;
 }
 
 .page-main__catalog {
@@ -115,7 +104,7 @@
     left: 0;
     bottom: 0;
     transform: translateY(50%);
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-size: contain;
   }
 
@@ -141,11 +130,6 @@
     padding-bottom: 372px;
     font-size: 43px;
     line-height: 50px;
-  }
-
-  .page-main__legend {
-    display: block;
-    top: 18px;
   }
 
   .page-main__text {

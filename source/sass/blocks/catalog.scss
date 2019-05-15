@@ -16,7 +16,8 @@
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
@@ -33,6 +34,7 @@
   padding: 0;
   width: 260px;
   height: 195px;
+  background-color: $color_grey;
 }
 
 .catalog-list__annotation {

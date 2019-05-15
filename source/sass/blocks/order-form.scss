@@ -31,11 +31,11 @@
   line-height: 17px;
   color: $text_color_legend;
   text-transform: uppercase;
+}
 
-  &--tell,
-  &--email {
-    margin-bottom: 7px;
-  }
+.order-form__subtitle--tell,
+.order-form__subtitle--email {
+  margin-bottom: 7px;
 }
 
 .order-form__subtitle--name {

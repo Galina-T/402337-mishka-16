@@ -17,7 +17,8 @@
     background-color: $color_greyish_brown;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: rgba($color: $color_white, $alpha: 0.3);
     background-color: $color_greyish_brown;
   }

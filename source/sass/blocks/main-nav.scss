@@ -11,11 +11,11 @@
 }
 
 .main-nav--opened .menu-toggle {
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
 }
 
 .main-nav--closed .menu-toggle {
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 @media (max-width: $mobile-width-only) {
@@ -34,6 +34,7 @@
 
 @media (min-width: $width_tablet) {
   .main-nav {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -41,30 +42,21 @@
     max-width: 1150px;
 
     @include inner();
-  }
 
-  .main-nav__item {
-    border-left: $border_default;
-  }
-
-  .main-nav__item--menu {
-    order: 1;
-    width: calc(100% - 300px);
+    &::before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      top: 88px;
+      left: 0;
+      background-color: $color_light_pink;
+    }
   }
 
   .main-nav__wrapper {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $width_desctop) {
-  .main-nav {
-    justify-content: space-between;
-  }
-
-  .main-nav__item--menu {
-    order: 0;
-    width: 450px;
+    align-items: flex-start;
   }
 }
