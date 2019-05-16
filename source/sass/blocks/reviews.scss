@@ -45,6 +45,7 @@
 .review__control {
   margin-bottom: 39px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $width_tablet) {
@@ -72,6 +73,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
   }

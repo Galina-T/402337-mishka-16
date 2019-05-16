@@ -24,6 +24,7 @@
 
 .contacts__list-item {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 
   &:last-child {
@@ -92,6 +93,7 @@
     font-size: 43px;
     line-height: 50px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
@@ -111,6 +113,7 @@
 
   .contacts__list {
     display: flex;
+    flex-wrap: wrap;
     font-size: $font_size_main;
     align-items: flex-start;
   }

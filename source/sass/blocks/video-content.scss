@@ -54,6 +54,7 @@
   position: relative;
   margin-bottom: 25px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .video-content__play {
@@ -93,6 +94,7 @@
 @media (min-width: $width_tablet) {
   .video-content__item {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 0 0 46px;
   }

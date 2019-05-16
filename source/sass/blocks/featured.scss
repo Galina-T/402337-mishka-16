@@ -11,6 +11,7 @@
 .featured__title-wrapper {
   margin-bottom: 23px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
 }
@@ -97,6 +98,7 @@
 
   .featured__wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 43%;
   }

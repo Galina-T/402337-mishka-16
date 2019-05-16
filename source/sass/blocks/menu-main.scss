@@ -87,6 +87,7 @@
 
   .menu-main__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .menu-main__link {
