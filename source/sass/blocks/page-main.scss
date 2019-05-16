@@ -2,6 +2,8 @@
   margin: 0 auto;
   width: 320px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-main__head {

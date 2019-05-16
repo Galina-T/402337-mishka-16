@@ -2,6 +2,11 @@
   display: flex;
 }
 
+.table__head,
+.table__tbody {
+  display: block;
+}
+
 .table__tbody {
   flex-grow: 1;
 }
@@ -13,10 +18,12 @@
 
 .table__cell {
   padding: 10px 0;
+  display: block;
   font-size: 15px;
   line-height: 20px;
   font-weight: $font_weight_alt;
   color: $color_greyish_brown;
+  text-align: left;
   box-shadow: 0 1px 0 0 $color_grey;
 }
 
