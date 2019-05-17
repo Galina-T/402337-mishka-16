@@ -1,6 +1,7 @@
 .label {
   line-height: 18px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
 }
@@ -31,6 +32,21 @@
     border-bottom: 2px solid $color_greyish_brown;
     border-right: 2px solid $color_greyish_brown;
     transform: rotate(45deg);
+  }
+}
+
+.label--modal-size {
+  padding: 15px 0;
+  justify-content: center;
+  border: 2px solid rgba($color: $color_greyish_brown, $alpha: 0.1);
+
+  &:hover {
+    border-color: rgba($color: $color_greyish_brown, $alpha: 0.3);
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($color: $color_seafoam_blue, $alpha: 1);
   }
 }
 

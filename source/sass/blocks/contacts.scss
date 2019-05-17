@@ -1,5 +1,5 @@
 .contacts {
-  padding: 38px 0 40px;
+  padding: 36px 0 40px;
 }
 
 .contacts__wrapper {
@@ -24,6 +24,7 @@
 
 .contacts__list-item {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 
   &:last-child {
@@ -49,7 +50,8 @@
     color: $color_greeny_blue;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: $color_greeny_blue;
     opacity: 0.3;
   }
@@ -62,11 +64,11 @@
   height: 457px;
   display: block;
   background-color: #f4e9d7;
-  background-image: url("../../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/map-mobile@2x.jpg");
+    background-image: url("../img/map-mobile@2x.jpg");
     background-size: cover;
   }
 }
@@ -91,6 +93,7 @@
     font-size: 43px;
     line-height: 50px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
@@ -99,7 +102,7 @@
       content: "";
       width: 47px;
       height: 81px;
-      background-image: url("../../img/icon-flag.svg");
+      background-image: url("../img/icon-flag.svg");
     }
   }
 
@@ -110,6 +113,7 @@
 
   .contacts__list {
     display: flex;
+    flex-wrap: wrap;
     font-size: $font_size_main;
     align-items: flex-start;
   }
@@ -126,10 +130,10 @@
   .contacts__map {
     margin-bottom: 55px;
     width: 768px;
-    background-image: url("../../img/map-tablet@1x.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/map-tablet@2x.jpg");
+      background-image: url("../img/map-tablet@2x.jpg");
     }
   }
 
@@ -181,10 +185,10 @@
     margin-bottom: -50px;
     width: 525px;
     align-self: flex-start;
-    background-image: url("../../img/map-desktop@1x.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/map-desktop@2x.jpg");
+      background-image: url("../img/map-desktop@2x.jpg");
     }
   }
 

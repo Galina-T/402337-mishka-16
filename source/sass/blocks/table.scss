@@ -1,5 +1,11 @@
 .table {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.table__head,
+.table__tbody {
+  display: block;
 }
 
 .table__tbody {
@@ -8,15 +14,18 @@
 
 .table__tr {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
 .table__cell {
   padding: 10px 0;
+  display: block;
   font-size: 15px;
   line-height: 20px;
   font-weight: $font_weight_alt;
   color: $color_greyish_brown;
+  text-align: left;
   box-shadow: 0 1px 0 0 $color_grey;
 }
 

@@ -1,6 +1,7 @@
 .copyright {
   padding: 20px 0 25px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -19,7 +20,8 @@
     fill: $color_greeny_blue;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     fill: $color_greeny_blue;
     opacity: 0.3;
   }

@@ -14,7 +14,8 @@
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
@@ -41,11 +42,11 @@
   margin: 0 auto;
   width: 260px;
   height: 150px;
-  background: transparent url("../../img/video-mobile@1x.jpg") no-repeat 0 0;
+  background: transparent url("../img/video-mobile@1x.jpg") no-repeat 0 0;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
   }
 }
 
@@ -53,6 +54,7 @@
   position: relative;
   margin-bottom: 25px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .video-content__play {
@@ -66,7 +68,8 @@
     height: 92px;
   }
 
-  &:active svg {
+  &:active svg,
+  &:focus svg {
     width: 81px;
     height: 62px;
     opacity: 0.3;
@@ -91,6 +94,7 @@
 @media (min-width: $width_tablet) {
   .video-content__item {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 0 0 46px;
   }
@@ -114,10 +118,10 @@
   .video-content__clip {
     width: 668px;
     height: 455px;
-    background-image: url("../../img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
 
@@ -162,10 +166,10 @@
 
   .video-content__clip {
     width: 682px;
-    background-image: url("../../img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x.jpg");
     }
   }
 

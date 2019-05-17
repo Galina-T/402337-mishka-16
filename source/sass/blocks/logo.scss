@@ -12,7 +12,8 @@
     fill: $color_greeny_blue;
   }
 
-  &:active .logo__img--footer {
+  &:active .logo__img--footer,
+  &:focus .logo__img--footer {
     fill: $color_greeny_blue;
     opacity: 0.3;
   }
@@ -44,7 +45,8 @@
 
 @media (min-width: $width_desctop) {
   .logo--header {
-    padding: 9px 0;
+    padding: 9px 0 7px;
+    flex-grow: 1;
   }
 
   .logo__img--header {

@@ -7,7 +7,8 @@
     opacity: 1;
   }
 
-  &:active .search-form__icon {
+  &:active .search-form__icon,
+  &:focus .search-form__icon {
     fill: $color_seafoam_blue;
     opacity: 0.3;
   }
@@ -20,6 +21,7 @@
   font: inherit;
   border: none;
   background-color: inherit;
+  -webkit-appearance: none;
 }
 
 .search-form__input::placeholder {
@@ -38,7 +40,8 @@
 
 @media (min-width: $width_tablet) {
   .search-form {
-    padding: 40px;
+    padding: 44px 40px;
+    border-left: $border_default;
     border-bottom: none;
   }
 

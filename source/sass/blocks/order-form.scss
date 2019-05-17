@@ -27,15 +27,16 @@
   padding-right: 25px;
   margin-bottom: 23px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   line-height: 17px;
   color: $text_color_legend;
   text-transform: uppercase;
+}
 
-  &--tell,
-  &--email {
-    margin-bottom: 7px;
-  }
+.order-form__subtitle--tell,
+.order-form__subtitle--email {
+  margin-bottom: 7px;
 }
 
 .order-form__subtitle--name {
@@ -119,6 +120,7 @@
   .order-form__item {
     margin-bottom: 24px;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .order-form__item--checkbox:nth-child(odd) {
@@ -139,6 +141,7 @@
 
   .order-form__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }

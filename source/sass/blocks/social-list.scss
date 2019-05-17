@@ -10,6 +10,7 @@
 
 .social-list__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -25,7 +26,8 @@
     fill: $color_greeny_blue;
   }
 
-  &:active .social-list__icon {
+  &:active .social-list__icon,
+  &:focus .social-list__icon {
     fill: $color_greeny_blue;
     opacity: 0.3;
   }
