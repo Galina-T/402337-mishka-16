@@ -1,5 +1,10 @@
 "use strict";
 
+var mapCantainer = document.querySelector(".contacts__map");
+
+mapCantainer.classList.add("contacts__map--js");
+mapCantainer.removeAttribute("href");
+
 document.addEventListener("DOMContentLoaded", function(evt) {
   ymaps.ready(init);
   var myMap;
@@ -22,5 +27,8 @@ document.addEventListener("DOMContentLoaded", function(evt) {
     });
 
     myMap.geoObjects.add(myPlacemark);
+
+    mapCantainer.style.position = "relative";
+    myMap.container.getContainerElement().style.position = "absolute";
   }
 });
