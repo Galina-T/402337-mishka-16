@@ -79,6 +79,7 @@
 
 @media (min-width: $width_tablet) {
   .order-form__section {
+    margin: 0 auto;
     position: relative;
     border: none;
   }
@@ -140,6 +141,7 @@
   }
 
   .order-form__wrapper {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -159,6 +161,10 @@
 }
 
 @media (min-width: $width_desctop) {
+  .order-form__section {
+    max-width: 1050px;
+  }
+
   .order-form__list {
     padding-left: 175px;
     padding-right: 175px;
@@ -185,7 +191,10 @@
   }
 
   .order-form__wrapper {
+    margin: 0 auto;
     padding-left: 225px;
     padding-right: 225px;
+    max-width: 1150px;
+    box-sizing: border-box;
   }
 }

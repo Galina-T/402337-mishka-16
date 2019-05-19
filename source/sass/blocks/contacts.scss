@@ -39,6 +39,7 @@
 
 .contacts__address {
   font-style: normal;
+  width: 178px;
 }
 
 .contacts__link {
@@ -60,7 +61,7 @@
 .contacts__map {
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 322px;
+  width: 320px;
   height: 457px;
   display: block;
   background-color: #f4e9d7;
@@ -127,9 +128,13 @@
     }
   }
 
+  .contacts__address {
+    width: auto;
+  }
+
   .contacts__map {
     margin-bottom: 55px;
-    width: 768px;
+    width: auto;
     background-image: url("../img/map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

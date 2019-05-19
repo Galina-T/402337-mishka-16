@@ -1,11 +1,11 @@
 .page-header {
-  margin: 0 auto;
+  margin: 0;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   z-index: 1;
-  width: 320px;
+  width: auto;
 }
 
 .page-header__logo {

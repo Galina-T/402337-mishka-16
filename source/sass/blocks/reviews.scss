@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 51px;
 }
 
 .reviews__wrapper {
@@ -104,10 +104,8 @@
 
 @media (min-width: $width_desctop) {
   .reviews {
-    padding-right: 0;
     padding-top: 79px;
     padding-bottom: 185px;
-    padding-left: 175px;
   }
 
   .reviews__title {
