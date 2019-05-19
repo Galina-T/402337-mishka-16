@@ -83,4 +83,9 @@ input[type="checkbox"] {
     background-color: $color_seafoam_two;
     box-shadow: inset 0 0 0 15px #ffffff;
   }
+
+  input[name="full-name"] {
+    width: auto;
+    flex-grow: 1;
+  }
 }

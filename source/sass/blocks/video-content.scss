@@ -4,6 +4,8 @@
 
 .video-content__list {
   @include list-reset();
+  margin: 0 auto;
+  width: 260px;
 }
 
 .video-content__item {
@@ -92,6 +94,10 @@
 }
 
 @media (min-width: $width_tablet) {
+  .video-content__list {
+    width: 668px;
+  }
+
   .video-content__item {
     display: flex;
     flex-wrap: wrap;
@@ -139,6 +145,10 @@
 }
 
 @media (min-width: $width_desctop) {
+  .video-content__list {
+    width: 1050px;
+  }
+
   .video-content__item {
     padding: 0 57px 0 0;
     flex-direction: row;

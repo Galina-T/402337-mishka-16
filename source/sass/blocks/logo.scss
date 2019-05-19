@@ -4,7 +4,7 @@
 }
 
 .logo--header {
-  padding: 22px 0 20px;
+  padding: 22px 0;
 }
 
 .logo--footer {
@@ -36,6 +36,10 @@
 }
 
 @media (min-width: $width_tablet) {
+  .logo--header {
+    padding-bottom: 20px;
+  }
+
   .logo__img--header {
     margin: 0;
     width: 112px;

@@ -1,6 +1,6 @@
 .page-main {
-  margin: 0 auto;
-  width: 320px;
+  margin: 0;
+  width: auto;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -8,8 +8,8 @@
 }
 
 .page-main__head {
+  margin: 0;
   position: relative;
-  margin-bottom: 30px;
 }
 
 .page-main__head--form {
@@ -31,14 +31,16 @@
     left: 0;
     bottom: 0;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat-x;
     transform: rotate(180deg);
   }
 }
 
 .page-main__subtitle {
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
 
   @include inner();
   padding-top: 70px;
@@ -62,7 +64,7 @@
 }
 
 .page-main__catalog {
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .page-main__text {
@@ -86,13 +88,7 @@
 
 @media (min-width: $width_tablet) {
   .page-main {
-    margin: 0;
     margin-top: -60px;
-    width: auto;
-  }
-
-  .page-main__head {
-    margin-bottom: 75px;
   }
 
   .page-main__head--form {
@@ -125,7 +121,7 @@
   }
 
   .page-main__catalog {
-    margin-bottom: 53px;
+    margin-top: 75px;
   }
 
   .page-main__subtitle {
@@ -133,6 +129,7 @@
     padding-bottom: 372px;
     font-size: 43px;
     line-height: 50px;
+    width: auto;
   }
 
   .page-main__text {
@@ -149,16 +146,20 @@
 
 @media (min-width: $width_desctop) {
   .page-main {
-    width: 1150px;
-    margin: -63px auto 0;
+    margin-top: -63px;
   }
 
   .page-main__wrapper {
+    margin: 0 auto;
+
     @include inner;
+    width: 1150px;
+    box-sizing: border-box;
   }
 
-  .page-main__head {
-    margin-bottom: 125px;
+  .page-main__section {
+    padding-right: 0;
+    padding-left: 175px;
   }
 
   .page-main__head::after {
@@ -184,16 +185,21 @@
   .page-main__text {
     padding-left: 225px;
     padding-right: 225px;
+    margin: 0 auto;
+    max-width: 1150px;
+    box-sizing: border-box;
   }
 
   .page-main__catalog {
     margin-bottom: 6px;
+    margin-top: 125px;
   }
 
   .page-main__subtitle {
     font-size: 53px;
     line-height: 57px;
     padding-bottom: 357px;
+    width: 1050px;
   }
 
   .page-main__video {

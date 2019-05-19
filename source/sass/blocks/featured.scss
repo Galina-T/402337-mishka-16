@@ -1,6 +1,6 @@
 .featured {
   padding-top: 27px;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
   position: relative;
 }
 
@@ -50,6 +50,7 @@
 
 .featured__img {
   display: block;
+  margin: 0 auto;
   padding: 0;
   width: 260px;
   height: 315px;
@@ -137,10 +138,8 @@
 
 @media (min-width: $width_desctop) {
   .featured {
-    padding-right: 0;
     padding-top: 70px;
     padding-bottom: 95px;
-    padding-left: 175px;
   }
 
   .featured__title-wrapper {

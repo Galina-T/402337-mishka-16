@@ -1,6 +1,6 @@
 .main-nav {
+  margin: 0;
   position: relative;
-  box-sizing: border-box;
 }
 
 .main-nav__toggle {
@@ -38,7 +38,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    width: 100%;
     max-width: 1150px;
 
     @include inner();
